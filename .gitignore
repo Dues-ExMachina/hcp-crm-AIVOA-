@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Build folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Python (if backend uses Python)
+__pycache__/
+*.pyc
+
+# Database
+*.sqlite
+*.db
