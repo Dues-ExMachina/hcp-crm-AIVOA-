@@ -6,7 +6,7 @@ This project is a full-stack AI-first Customer Relationship Management (CRM) mod
 - **Frontend**: React (Vite) + Redux Toolkit + Tailwind CSS + Google Inter font.
 - **Backend**: Python + FastAPI.
 - **AI Framework**: LangGraph.
-- **LLM Models**: Groq APIs (specifically `gemma2-9b-it` for routing/suggestions and `llama-3.3-70b-versatile` for deep extraction).
+- **LLM Models**: Groq APIs (Deprociated not used `gemma2-9b-it` for routing/suggestions and `llama-3.3-70b-versatile` for deep extraction).
 - **Database**: MySQL.
 
 ---
@@ -22,7 +22,7 @@ Instead of requiring reps to manually fill out dozens of fields after a tiring h
 
 ---
 
-## Defined LangGraph Tools (Minimum 5)
+## Defined LangGraph Tools (5)
 
 The LangGraph agent has access to 5 specific tools to manage sales-related activities:
 
