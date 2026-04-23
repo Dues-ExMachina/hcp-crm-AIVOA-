@@ -29,3 +29,6 @@ __pycache__/
 # Database
 *.sqlite
 *.db
+
+#test
+test_*.py
