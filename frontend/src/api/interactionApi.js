@@ -1,11 +1,6 @@
-import axios from 'axios'
+import apiClient from './apiClient'
 
-const api = axios.create({
-  baseURL: '/api',
-  headers: { 'Content-Type': 'application/json' },
-})
-
-export const submitInteraction = (data) => api.post('/interactions/', {
+export const submitInteraction = (data) => apiClient.post('/interactions/', {
   hcp_id: data.hcpId || null,
   hcp_name: data.hcpName || null,
   rep_id: 1,
@@ -22,8 +17,8 @@ export const submitInteraction = (data) => api.post('/interactions/', {
   raw_chat_input: null,
 })
 
-export const searchHCPs = (q) => api.get('/hcps/search', { params: { q } })
+export const searchHCPs = (q) => apiClient.get('/hcps/search', { params: { q } })
 
-export const getInteractions = (params) => api.get('/interactions/', { params })
+export const getInteractions = (params) => apiClient.get('/interactions/', { params })
 
-export const deleteInteraction = (id) => api.delete(`/interactions/${id}`)
+export const deleteInteraction = (id) => apiClient.delete(`/interactions/${id}`)

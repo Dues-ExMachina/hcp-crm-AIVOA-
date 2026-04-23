@@ -11,9 +11,10 @@ class Settings(BaseSettings):
         extra="ignore"
     )
     
+    IS_PROD: bool = os.getenv("RENDER") == "true" or os.getenv("VERCEL") == "1"
+    
     GROQ_API_KEY: str
     DATABASE_URL: str = "mysql+aiomysql://root:password@localhost/hcp_crm"
-    # GROQ_MODEL_PRIMARY: str = "gemma2-9b-it"
     GROQ_MODEL_PRIMARY: str = "llama-3.3-70b-versatile"
     GROQ_MODEL_CONTEXT: str = "llama-3.3-70b-versatile"
 
